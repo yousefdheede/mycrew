@@ -1,9 +1,7 @@
-
-import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mycrew/home/homeappbar.dart';
+import 'package:mycrew/home/widgets/search_card.dart';
 class HomePage extends StatelessWidget {
 
 @override
@@ -27,7 +25,8 @@ children: [
     crossAxisAlignment: CrossAxisAlignment.start,
 
     children: [
-      HomeAppBar()
+      HomeAppBar(),
+      Search(),
     ],
   ),
 ],

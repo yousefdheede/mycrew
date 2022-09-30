@@ -17,10 +17,11 @@ SystemChrome.setSystemUIOverlayStyle(
   return MaterialApp(
     debugShowCheckedModeBanner: false,   
     title: 'MYCREW',
-    theme: ThemeData(//0x5999ED => light blue 
+    theme: ThemeData(//0x5999ED => light blue =>color: Color.fromARGB(0, 89, 153, 237),
     //0x333333 =>dark grey
       primaryColor: Color(0x5999ED),
-      accentColor: Color(0x333333)
+      accentColor: Color(0x333333),
+      backgroundColor: Color(0x5999ED),
     ),
     home: HomePage()
   );
