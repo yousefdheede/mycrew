@@ -21,14 +21,15 @@ class Search extends StatelessWidget{
       image: DecorationImage(
         image: AssetImage('assets/images/pray.png') ,
         fit: BoxFit.cover,
-        )
+        ),
+
     ),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Fast Search',
         style: TextStyle(
-          color: Colors.white,
+          color: Color(0x005999ed),
           fontSize: 26,
         ),
         ),
@@ -36,7 +37,7 @@ class Search extends StatelessWidget{
         Text('You can search \nThe Job you want!'
         ,style: TextStyle(
           height: 1.8,
-          color: Colors.white,
+          color: Color(0x005999ed),
           fontWeight: FontWeight.w400
         ),
         ),
