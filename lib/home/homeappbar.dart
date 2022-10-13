@@ -51,7 +51,7 @@ class HomeAppBar extends StatelessWidget{
                 child: Stack(
                   children: [
                     Icon(Icons.notification_add_outlined,
-                    size: 30, color: Color(0x333333),
+                    size: 35, color: Colors.white,
                     ),
                     Positioned(
                       top: 0,right: 0,
@@ -67,11 +67,11 @@ class HomeAppBar extends StatelessWidget{
                 ),
 
               ),
-              SizedBox(width: 20,),
+              SizedBox(width: 30,),
               ClipOval(
                 child: Image.asset(
                   'assets/images/avatar.png',
-                  width:40,
+                  width:50,
                 )
               ),
             ],

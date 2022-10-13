@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mycrew/home/homeappbar.dart';
-import 'package:mycrew/home/widgets/search_card.dart';
+import 'package:mycrew/home/widgets/job_list.dart';
+import 'package:mycrew/search/search_card.dart';
+import 'package:mycrew/home/widgets/taglist.dart';
 class HomePage extends StatelessWidget {
 
 @override
@@ -27,6 +29,8 @@ children: [
     children: [
       HomeAppBar(),
       Search(),
+      TagList(),
+      JobList(),
     ],
   ),
 ],
