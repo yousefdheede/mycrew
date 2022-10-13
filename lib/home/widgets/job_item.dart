@@ -37,9 +37,20 @@ JobItem(this.job,{this.showTime= false});
                     
                       ),
                         child: Image.asset(job.logoUrl),
-                    )
+                    ),
+                    SizedBox(width: 10,), 
+                    Text(job.company,
+                    style: TextStyle( 
+                      color: Colors.blueGrey, 
+                      fontSize: 16, 
+                      fontWeight: FontWeight.bold,
+                    ),),
                   ],
+                ),
+                Icon(job.isMark ? Icons.bookmark : Icons.bookmark_outline_outlined ,
+                color: job.isMark ? Theme.of(context).primaryColor : Colors.black,
                 )
+
             ],
           )
         ],
