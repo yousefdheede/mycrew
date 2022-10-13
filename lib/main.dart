@@ -20,7 +20,8 @@ SystemChrome.setSystemUIOverlayStyle(
     theme: ThemeData(//0x5999ED => light blue =>color: Color.fromARGB(0, 89, 153, 237),
     //0x333333 =>dark grey
       primaryColor: const Color(0x005999ed),
-      accentColor: const Color(0x00333333),
+      // ignore: deprecated_member_use
+      accentColor: Colors.grey,
       backgroundColor: const Color(0x005999ed),
     ),
     home: HomePage()

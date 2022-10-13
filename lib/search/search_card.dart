@@ -13,7 +13,7 @@ class Search extends StatelessWidget{
       horizontal: 25,
       vertical: 40,
     ),
-    height: 250,
+    height: 200,
     width: double.maxFinite,
     
     decoration: BoxDecoration(
@@ -52,6 +52,7 @@ class Search extends StatelessWidget{
           
           ),
           child: Row(
+            
             children: [
              
               Image.asset('assets/icons/search.png',

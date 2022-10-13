@@ -35,6 +35,56 @@ children: [
   ),
 ],
     ),
+    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+    floatingActionButton: FloatingActionButton( 
+      backgroundColor: Theme.of(context).accentColor,
+      elevation: 0,
+    onPressed: () {},
+    child: Icon( 
+      Icons.add, 
+      color: Colors.white, 
+      
+    )
+    ),
+    bottomNavigationBar: Theme(
+      data: ThemeData( 
+        splashColor: Colors.transparent, 
+        highlightColor: Colors.transparent,
+      ),
+      child: BottomNavigationBar( 
+        showSelectedLabels: false, 
+        showUnselectedLabels: false, 
+        selectedItemColor: Color.fromARGB(0, 2, 76, 173), 
+        //backgroundColor: Color.fromARGB(0, 69, 70, 72),
+        type: BottomNavigationBarType.fixed, 
+        items: const [
+          BottomNavigationBarItem( 
+            label: 'Home', 
+            icon: Icon(Icons.home, 
+            size: 20,),
+          ),
+          BottomNavigationBarItem( 
+            label: 'Case', 
+            icon: Icon(Icons.cases, 
+            size: 20,),
+          ),
+          BottomNavigationBarItem( 
+            label: '', 
+            icon: Text('')
+          ),
+          BottomNavigationBarItem( 
+            label: 'Chat', 
+            icon: Icon(Icons.chat_outlined, 
+            size: 20,),
+          ),
+          BottomNavigationBarItem( 
+            label: 'Person', 
+            icon: Icon(Icons.person_outlined, 
+            size: 20,),
+          ),
+        ],
+      ),
+    ),
   );
 }
 

@@ -9,8 +9,8 @@ final joblist=Job.generateJobs();
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 15),
-      height: 100, 
+      margin: EdgeInsets.symmetric(vertical: 10),
+      height: 120, 
 
       child: ListView.separated( 
         scrollDirection: Axis.horizontal, 
