@@ -29,15 +29,23 @@ JobItem(this.job,{this.showTime= false});
                 Row(
                   children: [
                     Container(
-                      height: 30, 
+                      height: 40, 
+                      
                       width: 40, 
-                      padding: EdgeInsets.all(8), 
+                      padding: EdgeInsets.all(5), 
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10), 
                        color: Colors.grey.withOpacity(0.1), 
+                       
                     
                       ),
-                        child: Image.asset(job.logoUrl),
+                        child:Container( child: Image.asset(job.logoUrl,
+                        width: 30,height: 30,
+                        fit: BoxFit.cover,
+                        )
+                       
+                       
+                        ),
                     ),
                     SizedBox(width: 10,), 
                     Text(job.company,
@@ -49,13 +57,13 @@ JobItem(this.job,{this.showTime= false});
                   ],
                 ),
                 Icon(job.isMark ? Icons.bookmark : Icons.bookmark_outline_outlined ,
-                color: job.isMark ? Theme.of(context).primaryColor : Colors.black,
+                color: job.isMark ? Colors.green : Colors.black,
                 )
 
             ],
           ),
           SizedBox(
-            height:10 ),
+            height:15 ),
             Text(job.title , style:TextStyle(
               fontWeight: FontWeight.bold,
 

@@ -1,7 +1,8 @@
 
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:mycrew/home/home.dart';
 
 class HomeAppBar extends StatelessWidget{
 
@@ -9,7 +10,7 @@ class HomeAppBar extends StatelessWidget{
   Widget build(BuildContext context){
     return Container(
       
-      color: Colors.lightBlue,
+      color: Colors.white,
       padding: EdgeInsets.only(
         top: MediaQuery.of(context).padding.top,
         left:25,
@@ -25,22 +26,21 @@ class HomeAppBar extends StatelessWidget{
 
 
             children: [
-              SizedBox(height: 11,),
-              Text('Welcome Home', style: TextStyle(
-                backgroundColor:  Color(0x5999ED) ,
-                color: Colors.white,
-                 fontWeight: FontWeight.bold, 
-              
-              
-              ),),
-              SizedBox(height: 11,),
-              Text('User name', style: TextStyle(
-                backgroundColor:  Color(0x5999ED) ,
-                color: Colors.white,
-                 fontWeight: FontWeight.bold, 
-              
-              
-              ),),
+             
+              GestureDetector( 
+                onTap: () {
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => HomePage()));
+                },
+               child: Text('  MYCREW',style: TextStyle( 
+                color: Color.fromARGB(255, 2, 121, 218), fontWeight: FontWeight.bold, 
+                fontSize: 25, fontStyle: FontStyle.italic
+             ), 
+             
+             ),
+               ),
+             
+             
+            
             ],
           ),
           Row(
@@ -51,7 +51,7 @@ class HomeAppBar extends StatelessWidget{
                 child: Stack(
                   children: [
                     Icon(Icons.notification_add_outlined,
-                    size: 35, color: Colors.white,
+                    size: 35, color: Colors.black45,
                     ),
                     Positioned(
                       top: 0,right: 0,

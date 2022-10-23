@@ -23,12 +23,11 @@ children: [
       ),
     ],
   ),
-  Column(
+  Column( 
     crossAxisAlignment: CrossAxisAlignment.start,
 
     children: [
       HomeAppBar(),
-      Search(),
       TagList(),
       JobList(),
     ],
@@ -42,7 +41,7 @@ children: [
     onPressed: () {},
     child: Icon( 
       Icons.add, 
-      color: Colors.white, 
+      color: Colors.black, 
       
     )
     ),
@@ -59,14 +58,18 @@ children: [
         type: BottomNavigationBarType.fixed, 
         items: const [
           BottomNavigationBarItem( 
-            label: 'Home', 
-            icon: Icon(Icons.home, 
-            size: 20,),
+            label: 'Search', 
+            icon: Icon(Icons.search, 
+            size: 25,
+            color: Colors.grey,
+            ),
           ),
           BottomNavigationBarItem( 
-            label: 'Case', 
-            icon: Icon(Icons.cases, 
-            size: 20,),
+            label: 'Notification', 
+            icon: Icon(Icons.notifications_active, 
+            size: 25,
+            color: Colors.grey,
+            ),
           ),
           BottomNavigationBarItem( 
             label: '', 
@@ -74,13 +77,13 @@ children: [
           ),
           BottomNavigationBarItem( 
             label: 'Chat', 
-            icon: Icon(Icons.chat_outlined, 
-            size: 20,),
+            icon: Icon(Icons.chat, 
+            size: 23,),
           ),
           BottomNavigationBarItem( 
-            label: 'Person', 
-            icon: Icon(Icons.person_outlined, 
-            size: 20,),
+            label: 'My Account', 
+            icon: Icon(Icons.person, 
+            size: 24,),
           ),
         ],
       ),

@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:mycrew/search/search.dart';
 
 class Search extends StatelessWidget{
 
@@ -8,8 +9,8 @@ class Search extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Container(
-    margin: EdgeInsets.all(25),
-    padding: EdgeInsets.symmetric(
+    margin: const EdgeInsets.all(25),
+    padding: const EdgeInsets.symmetric(
       horizontal: 25,
       vertical: 40,
     ),
@@ -18,7 +19,7 @@ class Search extends StatelessWidget{
     
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(30),
-      image: DecorationImage(
+      image: const DecorationImage(
         image: AssetImage('assets/images/pray.png') ,
         fit: BoxFit.cover,
         ),
@@ -27,47 +28,56 @@ class Search extends StatelessWidget{
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // ignore: prefer_const_constructors
         Text('Fast Search',
+        // ignore: prefer_const_constructors
         style: TextStyle(
-          color: Color(0x005999ed),
-          fontSize: 26,
+          color: const Color(0x005999ed),
+          fontSize: 20,
         ),
         ),
-        SizedBox(height: 9,),
-        Text('You can search \nThe Job you want!'
+        const SizedBox(height: 9),
+        const Text('You can search \nThe Job you want!'
         ,style: TextStyle(
           height: 1.8,
           color: Color(0x005999ed),
-          fontWeight: FontWeight.w400
+          fontWeight: FontWeight.bold
         ),
         ),
-        SizedBox(height: 30,),
-        Container(
-         
-          padding: EdgeInsets.all(15),
+        const SizedBox(height: 25,),
+        GestureDetector (
+          onTap: (){
+            Navigator.of(context)
+            .push(MaterialPageRoute
+            (builder: (context)=>SearchPage())
+            );
+          },
+        
+       child: Container(
+          padding: const EdgeInsets.all(15),
           decoration: BoxDecoration(
               
-             color: Colors.white,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(30,),
           
-          ),
+         ),
           child: Row(
-            
             children: [
              
               Image.asset('assets/icons/search.png',
                 width:20,
               ),
-                SizedBox(width: 10,),
-                Text('Search',
+                const SizedBox(width: 15,),
+                const Text('Search',
                 style: TextStyle(
                   color: Colors.grey,
                   fontSize: 18,
                 ),
-                )
+                ),
             ],
           ),
-        )
+        ),
+        ),
       ],
     ),
   ); 
@@ -76,3 +86,4 @@ class Search extends StatelessWidget{
 
 
 }
+*/

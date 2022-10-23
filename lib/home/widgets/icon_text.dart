@@ -12,8 +12,9 @@ IconText(this.icon,this.text);
     child: Row(
       children: [
         Icon(icon,
-        color: Color.fromARGB(255, 230, 207, 6)),
-        SizedBox(width: 10,),
+        size: 20,
+        color: Color.fromRGBO(230, 207, 6, 1)),
+        SizedBox(width: 15,),
         Text(text, style: TextStyle( 
            fontSize: 12, color: Colors.blueGrey, fontWeight: FontWeight.bold,
         )),
